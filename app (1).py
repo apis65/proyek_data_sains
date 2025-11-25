@@ -12,7 +12,7 @@ try:
     with open('standard_scaler.pkl', 'rb') as file:
         scaler = pickle.load(file)
 except FileNotFoundError:
-    st.error("File model atau transformer tidak ditemukan. Pastikan semua file .pkl berada dalam folder yang sama dengan app (1).py.")
+    st.error("File model atau transformer tidak ditemukan. Pastikan semua file .pkl berada dalam folder yang sama dengan app.py.")
     st.stop()
 
 # --- Mapping kategori sesuai data training --- #
